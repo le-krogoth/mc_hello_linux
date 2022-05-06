@@ -18,25 +18,65 @@ Small project to test platformio for Linux x86_64 platform
 > mkdir mc_hello_linux 
 > cd mc_hello_linux/
 
-## initialise platformio
-
-## change config accordingly
-
-## write the hello world source file
-
-## compile
-
-## run
+## Initialise platformio
 
 
+## Change config accordingly
+
+> nano platformio.ini
+
+`
+; PlatformIO Project Configuration File
+;
+;   Build options: build flags, source filter, extra scripting
+;   Upload options: custom port, speed and extra flags
+;   Library options: dependencies, extra library storages
+;
+; Please visit documentation for the other options and examples
+; http://docs.platformio.org/page/projectconf.html
+
+[env:linux_x86_64]
+platform = linux_x86_64
+`
+
+## Write the hello world source file
+
+> nano src/main.c
+
+`
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello World!\n");
+    return 0;
+}
+`
+
+# Compile / Build project
+> pio run
+
+# Run program
+> .pioenvs/native/program
+
+# Clean build files
+> pio run --target clean
 
 
-# short route for cheaters, get this project
+
+
+# Short route for cheaters
+# Get this project
 > git clone https://github.com/le-krogoth/mc_hello_linux.git
 
-## enter directory
+## Enter directory
 > cd mc_hello_linux/
 
-## compile
+# Compile / Build project
+> pio run
 
-## run
+# Run program
+> .pioenvs/native/program
+
+# Clean build files
+> pio run --target clean
