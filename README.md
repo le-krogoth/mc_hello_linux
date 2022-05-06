@@ -25,7 +25,7 @@ Small project to test platformio for Linux x86_64 platform
 
 > nano platformio.ini
 
-`
+```
 ; PlatformIO Project Configuration File
 ;
 ;   Build options: build flags, source filter, extra scripting
@@ -37,13 +37,13 @@ Small project to test platformio for Linux x86_64 platform
 
 [env:linux_x86_64]
 platform = linux_x86_64
-`
+```
 
 ## Write the hello world source file
 
 > nano src/main.c
 
-`
+```
 #include <stdio.h>
 
 int main()
@@ -51,7 +51,7 @@ int main()
     printf("Hello World!\n");
     return 0;
 }
-`
+```
 
 # Compile / Build project
 > pio run
