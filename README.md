@@ -62,15 +62,15 @@ int main()
 }
 ```
 
-# Compile / Build project
+## Compile / Build project
 
 > pio run
 
-# Run program
+## Run program
 
 > .pioenvs/native/program
 
-# Clean build files
+## Clean build files
 
 > pio run --target clean
 
@@ -78,7 +78,7 @@ int main()
 
 
 # Short route for cheaters
-# Get this project
+## Get this project
 
 > git clone https://github.com/le-krogoth/mc_hello_linux.git
 
@@ -86,14 +86,14 @@ int main()
 
 > cd mc_hello_linux/
 
-# Compile / Build project
+## Compile / Build project
 
 > pio run
 
-# Run program
+## Run program
 
 > .pioenvs/native/program
 
-# Clean build files
+## Clean build files
 
 > pio run --target clean
